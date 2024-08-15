@@ -1,4 +1,4 @@
-Projetos dos desafios do modulo java basico daa dio:
+Projetos dos desafios do modulo java basico da DIO:
 - conta-banco
 - controle-fluxo
 
