@@ -1,24 +1,29 @@
-# [DIO](www.dio.me) - Trilha Java Básico
+### [DIO](www.dio.me) - Trilha Java Básico
 ### POO - Desafio
-### Modelagem e Diagramação de um Componente iPhone
 ---
-### Modelagem UML
-
 
 ```mermaid
+
+---
+title: Modelagem e Diagramação de classes UML de um Componente iPhone
+---
+
 classDiagram
 
-    IReprodutorMusical
+    class IReprodutorMusical
+    <<interface>> IReprodutorMusical
     IReprodutorMusical: +tocar()
     IReprodutorMusical: +pausar()
     IReprodutorMusical: +selecionarMusica(String musica)
 
-    IAparelhoTelefonico
+    class IAparelhoTelefonico
+    <<interface>>IAparelhoTelefonico
     IAparelhoTelefonico: +ligar(String numero)
     IAparelhoTelefonico: +atender()
     IAparelhoTelefonico: +iniciarCorreioVoz()
 
-    INavegadorInternet
+    class INavegadorInternet
+    <<interface>>INavegadorInternet
     INavegadorInternet: +exibirPagina(String url)
     INavegadorInternet: +adicionarNovaAba()
     INavegadorInternet: +atualizarPagina()
