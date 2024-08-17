@@ -1,6 +1,7 @@
 Projetos dos desafios do modulo java basico da DIO:
 - conta-banco
 - controle-fluxo
+- poo/uml-poo
 
 ## Getting Started
 
