@@ -1,54 +1,52 @@
+# [DIO](www.dio.me) - Trilha Java Básico
+### POO - Desafio
+### Modelagem e Diagramação de um Componente iPhone
+---
+### Modelagem UML
+
+
 ```mermaid
 classDiagram
 
-    interface IReprodutorMusical {
-        +tocar()
-        +pausar()
-        +selecionarMusica(String musica)
-    }
+    IReprodutorMusical
+    IReprodutorMusical: +tocar()
+    IReprodutorMusical: +pausar()
+    IReprodutorMusical: +selecionarMusica(String musica)
 
-    interface IAparelhoTelefonico {
-        +ligar(String numero)
-        +atender()
-        +iniciarCorreioVoz()
-    }
+    IAparelhoTelefonico
+    IAparelhoTelefonico: +ligar(String numero)
+    IAparelhoTelefonico: +atender()
+    IAparelhoTelefonico: +iniciarCorreioVoz()
 
-    interface INavegadorInternet {
-        +exibirPagina(String url)
-        +adicionarNovaAba()
-        +atualizarPagina()
-    }
+    INavegadorInternet
+    INavegadorInternet: +exibirPagina(String url)
+    INavegadorInternet: +adicionarNovaAba()
+    INavegadorInternet: +atualizarPagina()
 
     class ReprodutorMusical {
-        +tocar()
-        +pausar()
-        +selecionarMusica(String musica)
+ 
     }
 
     class AparelhoTelefonico {
-        +ligar(String numero)
-        +atender()
-        +iniciarCorreioVoz()
+
     }
 
     class NavegadorInternet {
-        +exibirPagina(String url)
-        +adicionarNovaAba()
-        +atualizarPagina()
+
     }
 
     ReprodutorMusical ..|> IReprodutorMusical
     AparelhoTelefonico ..|> IAparelhoTelefonico
     NavegadorInternet ..|> INavegadorInternet
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    iPhone ..|> IReprodutorMusical
+    iPhone ..|> IAparelhoTelefonico
+    iPhone ..|> INavegadorInternet
 
 ```
 
 
-
+--
 
 
 
