@@ -1,7 +1,8 @@
 Projetos dos desafios do modulo java basico da DIO:
-- conta-banco
-- controle-fluxo
-- poo/uml-poo
+- [conta-banco](https://github.com/JJDSNT/dio-trilha-java-basico/tree/main/conta-banco)
+- [controle-fluxo](https://github.com/JJDSNT/dio-trilha-java-basico/tree/main/controle-fluxo/DesafioControleFluxo)
+- [poo/uml-poo](https://github.com/JJDSNT/dio-trilha-java-basico/tree/main/poo/uml-poo)
+- [banco-digital](lab-banco-digital-oo)
 
 ## Getting Started
 
