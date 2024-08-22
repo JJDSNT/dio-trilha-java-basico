@@ -1,3 +1,40 @@
+# Desafio
+- Use todo o seu conhecimento para estender o domínio, incluindo novas classes, atributos e/ou métodos;
+
+- ~~Incluir o Lombok ao projeto para reduzir sua verbosidade de código.~~
+
+## Alterações no Projeto de Banco
+
+### 1. Adicionar Novos Métodos à Interface `IConta`
+- **`getSaldo();`**: Para permitir a consulta do saldo da conta.
+- **`getTipoConta();`**: Para identificar o tipo da conta (corrente, poupança, etc.).
+
+### 2. Adicionar Novas Classes
+- **`Transacao`**: Classe para representar uma transação, com detalhes como tipo de transação (saque, depósito, transferência), valor e data.
+- **`ContaEspecial`**: Subclasse de `ContaCorrente` que oferece limites de crédito e juros.
+
+### 3. Adicionar Novos Métodos à Classe `Conta`
+A classe `Conta` foi aprimorada para incluir novos métodos e funcionalidades, tornando-a mais robusta e funcional. As principais mudanças incluem:
+- **Histórico de Transações**: Agora a classe `Conta` mantém um registro detalhado das transações realizadas (saques, depósitos e transferências).
+- **Método `imprimirExtrato`**: Adiciona a capacidade de imprimir um extrato detalhado, incluindo o histórico de transações.
+
+### 4. Alterações na Classe `ContaCorrente`
+A classe `ContaCorrente` foi expandida para suportar limites de cheque especial e outras funcionalidades. As principais mudanças são:
+- **Adição do Campo `limiteChequeEspecial`**: Inclui um campo para armazenar o limite do cheque especial disponível para a conta corrente.
+- **Construtor Adicional**: Adicionado um construtor para permitir a definição do limite de cheque especial ao criar uma instância de `ContaCorrente`.
+- **Método `sacar`**: Modificado para considerar o limite de cheque especial ao verificar se há saldo suficiente para o saque.
+- **Implementação do Método `getTipoConta`**: Implementado para retornar `"Conta Corrente"`, indicando o tipo da conta.
+- **Métodos Get e Set para `limiteChequeEspecial`**: Adicionados métodos para obter e definir o limite de cheque especial (`getLimiteChequeEspecial` e `setLimiteChequeEspecial`).
+
+### 4. Adicionar Novos Métodos à Classe `Banco`
+A classe `Banco` foi enriquecida com novos métodos para gerenciar contas e clientes. Agora, a classe pode realizar as seguintes operações:
+- **Abrir Conta**: Adiciona uma nova conta ao banco e associa a um cliente.
+- **Fechar Conta**: Remove uma conta do banco e encerra sua associação com o cliente.
+- **Buscar Conta**: Permite localizar uma conta específica pelo número da conta.
+
+
+
+---
 # Criando um Banco Digital com Java e Orientação a Objetos
 
 ## 02/08/2021 - [Mentoria #1: Tire Suas Dúvidas Sobre Orientação a Objetos](https://www.youtube.com/watch?v=YS6ouOhkyNI)
