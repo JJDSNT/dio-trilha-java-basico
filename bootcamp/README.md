@@ -1,3 +1,51 @@
+# Projeto Bootcamp
+
+## Serviços
+
+No projeto, criamos quatro classes de serviços para gerenciar diferentes aspectos do sistema. Estas classes encapsulam a lógica de negócios e facilitam a manipulação de dados. Abaixo está uma descrição de cada uma das classes de serviço e suas responsabilidades:
+
+### 1. `BootcampService`
+
+**Responsabilidade**: Gerenciar operações relacionadas a `Bootcamp`.
+
+- **Métodos principais**:
+  - **Adicionar Conteúdo**: Adiciona um conteúdo ao bootcamp.
+  - **Remover Conteúdo**: Remove um conteúdo do bootcamp.
+  - **Adicionar Desenvolvedor**: Adiciona um desenvolvedor ao bootcamp.
+  - **Remover Desenvolvedor**: Remove um desenvolvedor do bootcamp.
+
+### 2. `ProgressoService`
+
+**Responsabilidade**: Gerenciar o progresso dos desenvolvedores nos conteúdos.
+
+- **Métodos principais**:
+  - **Progredir**: Atualiza o progresso de um desenvolvedor, movendo um conteúdo da lista de inscritos para a lista de concluídos.
+
+### 3. `DevService`
+
+**Responsabilidade**: Gerenciar operações relacionadas a `Dev`.
+
+- **Métodos principais**:
+  - **Inscrever em Bootcamp**: Inscreve um desenvolvedor em um bootcamp.
+  - **Calcular Total XP**: Calcula o total de XP acumulado por um desenvolvedor.
+
+### 4. `ConteudoService`
+
+**Responsabilidade**: Gerenciar operações relacionadas a `Conteudo`.
+
+- **Métodos principais**:
+  - **Adicionar Conteúdo**: Adiciona um novo conteúdo.
+  - **Remover Conteúdo**: Remove um conteúdo existente.
+  - **Atualizar Conteúdo**: Atualiza os detalhes de um conteúdo.
+
+Estes serviços ajudam a manter o código mais modular e separado, facilitando a manutenção e a escalabilidade do sistema.
+
+
+
+
+
+-----
+
 <h1> Desafio: Aprenda na Prática Programação Orientada a Objetos</h1>
 
 <p align="center"> 📜 <a href="https://academiapme-my.sharepoint.com/:p:/g/personal/camila_cavalcante_dio_me/EaXyYOjBaFpZjkxhexMo5EcBKMEEAI5t5aHlsTjnBQJlUw?e=nxdB6C"> SLIDES APRESENTADO NO PROJETO </a> 📜 </P>
