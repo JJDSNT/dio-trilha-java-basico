@@ -3,6 +3,7 @@ Projetos dos desafios do modulo java basico da DIO:
 - [controle-fluxo](https://github.com/JJDSNT/dio-trilha-java-basico/tree/main/controle-fluxo/DesafioControleFluxo)
 - [poo/uml-poo](https://github.com/JJDSNT/dio-trilha-java-basico/tree/main/poo/uml-poo)
 - [banco-digital](https://github.com/JJDSNT/dio-trilha-java-basico/tree/main/banco-digital)
+- [Bootcamp](https://github.com/JJDSNT/dio-trilha-java-basico/tree/main/bootcamp)
 
 ## Getting Started
 
