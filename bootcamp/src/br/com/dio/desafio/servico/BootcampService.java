@@ -14,8 +14,4 @@ public class BootcampService {
     public void adicionarConteudoNoBootcamp(Bootcamp bootcamp, Conteudo conteudo) {
         bootcamp.getConteudos().add(conteudo);
     }
-
-    public void adicionarDevNoBootcamp(Bootcamp bootcamp, Dev dev) {
-        bootcamp.getDevsInscritos().add(dev);
-    }
 }

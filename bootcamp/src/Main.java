@@ -82,9 +82,9 @@ public class Main {
         System.out.println("Desenvolvedor: " + dev.getNome());
         for (Bootcamp bootcamp : dev.getBootcampsInscritos().keySet()) {
             System.out.println("Bootcamp: " + bootcamp.getNome());
-            System.out.println("Conteúdos Inscritos: " + dev.getBootcampsInscritos().get(bootcamp));
-            System.out.println("Conteúdos Concluídos: " + dev.getBootcampsConcluidos().get(bootcamp));
-            System.out.println("XP: " + dev.calcularTotalXp(bootcamp));
+            System.out.println("Conteúdos Inscritos: " + dev.getConteudosInscritos(bootcamp));
+            System.out.println("Conteúdos Concluídos: " + dev.getConteudosConcluidos(bootcamp));
+            System.out.println("XP Total: " + dev.calcularTotalXp());
             System.out.println();
         }
     }

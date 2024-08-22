@@ -8,35 +8,29 @@ No projeto, criamos quatro classes de serviços para gerenciar diferentes aspect
 
 **Responsabilidade**: Gerenciar operações relacionadas a `Bootcamp`.
 
-- **Métodos principais**:
-  - **Adicionar Conteúdo**: Adiciona um conteúdo ao bootcamp.
-  - **Remover Conteúdo**: Remove um conteúdo do bootcamp.
-  - **Adicionar Desenvolvedor**: Adiciona um desenvolvedor ao bootcamp.
-  - **Remover Desenvolvedor**: Remove um desenvolvedor do bootcamp.
+- **Inscrever Desenvolvedor**: Inscreve um desenvolvedor em um bootcamp.
+- **Adicionar Conteúdo**: Adiciona um conteúdo ao bootcamp.
 
 ### 2. `ProgressoService`
 
 **Responsabilidade**: Gerenciar o progresso dos desenvolvedores nos conteúdos.
 
-- **Métodos principais**:
   - **Progredir**: Atualiza o progresso de um desenvolvedor, movendo um conteúdo da lista de inscritos para a lista de concluídos.
 
 ### 3. `DevService`
 
 **Responsabilidade**: Gerenciar operações relacionadas a `Dev`.
 
-- **Métodos principais**:
-  - **Inscrever em Bootcamp**: Inscreve um desenvolvedor em um bootcamp.
-  - **Calcular Total XP**: Calcula o total de XP acumulado por um desenvolvedor.
+- **Inscrever em Bootcamp**: Inscreve um desenvolvedor em um bootcamp.
+ - **Progredir**: Avança o desenvolvedor no conteúdo atualmente inscrito, movendo-o da lista de conteúdos inscritos para a lista de conteúdos concluídos.
+
 
 ### 4. `ConteudoService`
 
 **Responsabilidade**: Gerenciar operações relacionadas a `Conteudo`.
 
-- **Métodos principais**:
-  - **Adicionar Conteúdo**: Adiciona um novo conteúdo.
-  - **Remover Conteúdo**: Remove um conteúdo existente.
-  - **Atualizar Conteúdo**: Atualiza os detalhes de um conteúdo.
+- **Criar Conteúdo**: Cria um novo conteúdo com os detalhes fornecidos.
+
 
 Estes serviços ajudam a manter o código mais modular e separado, facilitando a manutenção e a escalabilidade do sistema.
 
