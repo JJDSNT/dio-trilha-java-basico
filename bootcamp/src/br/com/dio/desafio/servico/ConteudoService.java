@@ -1,8 +1,10 @@
 package br.com.dio.desafio.servico;
 
 import br.com.dio.desafio.dominio.Conteudo;
+import br.com.dio.desafio.dominio.Curso;
+import br.com.dio.desafio.dominio.Mentoria;
+
 import java.util.Set;
-import java.util.HashSet;
 
 public class ConteudoService {
 

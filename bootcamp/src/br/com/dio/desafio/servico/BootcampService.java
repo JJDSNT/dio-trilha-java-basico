@@ -8,6 +8,7 @@ public class BootcampService {
 
     public void inscreverDevNoBootcamp(Dev dev, Bootcamp bootcamp) {
         dev.inscreverBootcamp(bootcamp);
+        bootcamp.getDevsInscritos().add(dev);
     }
 
     public void adicionarConteudoNoBootcamp(Bootcamp bootcamp, Conteudo conteudo) {
