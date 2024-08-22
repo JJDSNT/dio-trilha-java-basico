@@ -21,16 +21,16 @@ public abstract class Conta implements IConta {
 
 	@Override
 	public void sacar(double valor) {
-		saldo -= valor;
+		alterarSaldo(-valor);
 		registrarTransacao(new Transacao("Saque", valor, LocalDateTime.now()));
 	}
-
+	
 	@Override
 	public void depositar(double valor) {
-		saldo += valor;
+		alterarSaldo(valor);
 		registrarTransacao(new Transacao("Depósito", valor, LocalDateTime.now()));
 	}
-
+	
 	@Override
 	public void transferir(double valor, IConta contaDestino) {
 		this.sacar(valor);
