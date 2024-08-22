@@ -1,31 +1,19 @@
 package br.com.dio.desafio.servico;
 
 import br.com.dio.desafio.dominio.Dev;
-import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Bootcamp;
-import java.util.Optional;
 
 public class DevService {
 
     public void inscreverBootcamp(Dev dev, Bootcamp bootcamp) {
-        dev.getConteudosInscritos().addAll(bootcamp.getConteudos());
-        bootcamp.getDevsInscritos().add(dev);
+        dev.inscreverBootcamp(bootcamp);
     }
 
-    public void progredir(Dev dev) {
-        Optional<Conteudo> conteudo = dev.getConteudosInscritos().stream().findFirst();
-        if (conteudo.isPresent()) {
-            dev.getConteudosConcluidos().add(conteudo.get());
-            dev.getConteudosInscritos().remove(conteudo.get());
-        } else {
-            System.err.println("Você não está matriculado em nenhum conteúdo!");
-        }
+    public void progredir(Dev dev, Bootcamp bootcamp) {
+        dev.progredir(bootcamp);
     }
 
-    public double calcularTotalXp(Dev dev) {
-        return dev.getConteudosConcluidos()
-                  .stream()
-                  .mapToDouble(Conteudo::calcularXp)
-                  .sum();
+    public double calcularTotalXp(Dev dev, Bootcamp bootcamp) {
+        return dev.calcularTotalXp(bootcamp);
     }
 }
