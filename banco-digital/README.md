@@ -32,6 +32,32 @@ A classe `Banco` foi enriquecida com novos métodos para gerenciar contas e clie
 - **Fechar Conta**: Remove uma conta do banco e encerra sua associação com o cliente.
 - **Buscar Conta**: Permite localizar uma conta específica pelo número da conta.
 
+### 6. Demonstração das Novas Funcionalidades no Sistema
+
+O código a seguir demonstra como as novas funcionalidades foram implementadas e podem ser utilizadas em um cenário típico de operações bancárias:
+
+1. **Criação de Cliente**: Um cliente chamado "Venilton" é criado e suas contas são associadas ao banco.
+
+2. **Abertura de Contas**: 
+   - **Conta Corrente**: É aberta uma `ContaCorrente` para o cliente "Venilton", com um limite de cheque especial de R$ 500,00.
+   - **Conta Poupança**: Também é aberta uma `ContaPoupanca` para o mesmo cliente.
+
+3. **Operações Bancárias**:
+   - Um depósito de R$ 200,00 é feito na conta corrente.
+   - Um saque de R$ 150,00 é realizado na conta corrente.
+   - Uma transferência de R$ 50,00 é feita da conta corrente para a conta poupança.
+
+4. **Impressão de Extratos**: 
+   - Os extratos das contas corrente e poupança são impressos, mostrando o histórico de transações realizadas.
+
+5. **Uso do Cheque Especial**:
+   - Uma tentativa de saque que excede o saldo disponível é realizada, utilizando o limite de cheque especial. Caso o saldo seja insuficiente, uma exceção é lançada.
+
+6. **Fechamento de Conta**: 
+   - A conta corrente é fechada, removendo-a da lista de contas do banco.
+
+7. **Tentativa de Acesso a Conta Fechada**:
+   - O código demonstra a tentativa de buscar a conta corrente fechada, resultando em uma mensagem indicando que a conta não foi encontrada no banco.
 
 
 ---
