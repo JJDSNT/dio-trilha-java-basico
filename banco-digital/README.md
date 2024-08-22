@@ -26,7 +26,7 @@ A classe `ContaCorrente` foi expandida para suportar limites de cheque especial 
 - **Implementação do Método `getTipoConta`**: Implementado para retornar `"Conta Corrente"`, indicando o tipo da conta.
 - **Métodos Get e Set para `limiteChequeEspecial`**: Adicionados métodos para obter e definir o limite de cheque especial (`getLimiteChequeEspecial` e `setLimiteChequeEspecial`).
 
-### 4. Adicionar Novos Métodos à Classe `Banco`
+### 5. Adicionar Novos Métodos à Classe `Banco`
 A classe `Banco` foi enriquecida com novos métodos para gerenciar contas e clientes. Agora, a classe pode realizar as seguintes operações:
 - **Abrir Conta**: Adiciona uma nova conta ao banco e associa a um cliente.
 - **Fechar Conta**: Remove uma conta do banco e encerra sua associação com o cliente.
