@@ -12,22 +12,22 @@ public class Dev {
     private Map<Bootcamp, Set<Conteudo>> bootcampsConcluidos = new HashMap<>();
     
     // Inscrever em um bootcamp
-    public void inscreverBootcamp(Bootcamp bootcamp) {
-        bootcampsInscritos.put(bootcamp, new HashSet<>(bootcamp.getConteudos()));
-        bootcampsConcluidos.put(bootcamp, new HashSet<>());
-    }
+    // public void inscreverBootcamp(Bootcamp bootcamp) {
+    //     bootcampsInscritos.put(bootcamp, new HashSet<>(bootcamp.getConteudos()));
+    //     bootcampsConcluidos.put(bootcamp, new HashSet<>());
+    // }
 
     // Progredir em um bootcamp
-    public void progredir(Bootcamp bootcamp) {
-        Set<Conteudo> conteudosInscritos = bootcampsInscritos.get(bootcamp);
-        if (conteudosInscritos != null && !conteudosInscritos.isEmpty()) {
-            Conteudo conteudo = conteudosInscritos.iterator().next();
-            bootcampsConcluidos.get(bootcamp).add(conteudo);
-            conteudosInscritos.remove(conteudo);
-        } else {
-            System.err.println("Você não está matriculado em nenhum conteúdo neste bootcamp!");
-        }
-    }
+    // public void progredir(Bootcamp bootcamp) {
+    //     Set<Conteudo> conteudosInscritos = bootcampsInscritos.get(bootcamp);
+    //     if (conteudosInscritos != null && !conteudosInscritos.isEmpty()) {
+    //         Conteudo conteudo = conteudosInscritos.iterator().next();
+    //         bootcampsConcluidos.get(bootcamp).add(conteudo);
+    //         conteudosInscritos.remove(conteudo);
+    //     } else {
+    //         System.err.println("Você não está matriculado em nenhum conteúdo neste bootcamp!");
+    //     }
+    // }
 
     // Calcular XP total
     public double calcularTotalXp() {

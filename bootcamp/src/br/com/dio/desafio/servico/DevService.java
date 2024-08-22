@@ -5,11 +5,18 @@ import br.com.dio.desafio.dominio.Bootcamp;
 
 public class DevService {
 
-    public void inscreverBootcamp(Dev dev, Bootcamp bootcamp) {
-        dev.inscreverBootcamp(bootcamp);
+    private BootcampService bootcampService;
+
+    // Construtor para injeção de dependência
+    public DevService(BootcampService bootcampService) {
+        this.bootcampService = bootcampService;
     }
 
-    public void progredir(Dev dev, Bootcamp bootcamp) {
-        dev.progredir(bootcamp);
+    public void inscreverEmBootcamp(Dev dev, Bootcamp bootcamp) {
+        bootcampService.inscreverDevNoBootcamp(dev, bootcamp);
+    }
+
+    public double calcularTotalXp(Dev dev) {
+        return dev.calcularTotalXp();
     }
 }
