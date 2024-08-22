@@ -1,39 +1,48 @@
 # Projeto Bootcamp
 
 ## Serviços
-
-No projeto, criamos quatro classes de serviços para gerenciar diferentes aspectos do sistema. Estas classes encapsulam a lógica de negócios e facilitam a manipulação de dados. Abaixo está uma descrição de cada uma das classes de serviço e suas responsabilidades:
-
 ### 1. `BootcampService`
 
 **Responsabilidade**: Gerenciar operações relacionadas a `Bootcamp`.
 
-- **Inscrever Desenvolvedor**: Inscreve um desenvolvedor em um bootcamp.
-- **Adicionar Conteúdo**: Adiciona um conteúdo ao bootcamp.
+- **Criar Bootcamp**: Cria um novo bootcamp.
+- **Adicionar Conteúdo**: Adiciona um conteúdo ao bootcamp especificado.
+- **Criar Conteúdo**: Define o título e a descrição de um conteúdo.
+- **Inscrever Desenvolvedor**: Inscreve um desenvolvedor em um bootcamp e adiciona todos os conteúdos do bootcamp à lista de conteúdos inscritos do desenvolvedor.
+- **Progredir no Conteúdo**: Move um conteúdo da lista de conteúdos inscritos para a lista de conteúdos concluídos do desenvolvedor.
+- **Calcular XP Total**: Calcula o XP total com base nos conteúdos concluídos do desenvolvedor.
 
-### 2. `ProgressoService`
+## Resultado
 
-**Responsabilidade**: Gerenciar o progresso dos desenvolvedores nos conteúdos.
+**Desenvolvedor: Camila**
 
-  - **Progredir**: Atualiza o progresso de um desenvolvedor, movendo um conteúdo da lista de inscritos para a lista de concluídos.
+**Bootcamp: Bootcamp Java Developer**
+- **Conteúdos Inscritos**: 
+  - Curso{titulo='Curso Java', descricao='Descrição do Curso Java', cargaHoraria=8}
+- **Conteúdos Concluídos**: 
+  - Curso{titulo='Curso JS', descricao='Descrição do Curso JS', cargaHoraria=4}
+  - Mentoria{titulo='Mentoria de Java', descricao='Descrição da Mentoria de Java', data=2024-08-22}
 
-### 3. `DevService`
+**Bootcamp: Bootcamp Python Developer**
+- **Conteúdos Inscritos**: 
+  - Curso{titulo='Curso Python', descricao='Descrição do Curso Python', cargaHoraria=6}
+  - Mentoria{titulo='Mentoria de Python', descricao='Descrição da Mentoria de Python', data=2024-08-22}
+- **Conteúdos Concluídos**: []
 
-**Responsabilidade**: Gerenciar operações relacionadas a `Dev`.
+- **XP Total**: 70.0
 
-- **Inscrever em Bootcamp**: Inscreve um desenvolvedor em um bootcamp.
- - **Progredir**: Avança o desenvolvedor no conteúdo atualmente inscrito, movendo-o da lista de conteúdos inscritos para a lista de conteúdos concluídos.
+-------
 
+**Desenvolvedor: João**
 
-### 4. `ConteudoService`
+**Bootcamp: Bootcamp Java Developer**
+- **Conteúdos Inscritos**: 
+  - Mentoria{titulo='Mentoria de Java', descricao='Descrição da Mentoria de Java', data=2024-08-22}
+  - Curso{titulo='Curso Java', descricao='Descrição do Curso Java', cargaHoraria=8}
+- **Conteúdos Concluídos**: 
+  - Curso{titulo='Curso JS', descricao='Descrição do Curso JS', cargaHoraria=4}
 
-**Responsabilidade**: Gerenciar operações relacionadas a `Conteudo`.
-
-- **Criar Conteúdo**: Cria um novo conteúdo com os detalhes fornecidos.
-
-
-Estes serviços ajudam a manter o código mais modular e separado, facilitando a manutenção e a escalabilidade do sistema.
-
+- **XP Total**: 40.0
 
 
 
