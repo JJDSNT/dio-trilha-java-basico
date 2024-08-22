@@ -12,8 +12,4 @@ public class DevService {
     public void progredir(Dev dev, Bootcamp bootcamp) {
         dev.progredir(bootcamp);
     }
-
-    public double calcularTotalXp(Dev dev, Bootcamp bootcamp) {
-        return dev.calcularTotalXp(bootcamp);
-    }
 }
