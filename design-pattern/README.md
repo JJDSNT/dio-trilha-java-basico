@@ -18,6 +18,42 @@ Criar um serviço de cálculo de frete que, com base no tipo de entrega selecion
 
 Cada classe implementa a lógica específica de cálculo para o método de entrega correspondente.
 
+## Endpoints
+
+### `POST /pedido/calcular-frete`
+
+Calcula o valor do frete com base no tipo de entrega selecionado.
+
+- **Request**:
+  - **Body**: Um objeto JSON representando o pedido. Exemplo:
+    ```json
+    {
+      "peso": 2.5,
+      "dimensoes": {
+        "altura": 10,
+        "largura": 15,
+        "profundidade": 20
+      },
+      "destino": "São Paulo, SP"
+    }
+    ```
+  - **Query Parameter**: `tipoFrete` - O tipo de frete a ser utilizado. Exemplo: `CorreiosFreteStrategy`.
+
+- **Response**:
+  - **Status 200**: Retorna o valor calculado do frete.
+    ```json
+    {
+      "valorFrete": 25.00
+    }
+    ```
+  - **Status 400**: Retorna um erro caso o tipo de frete não seja suportado ou se houver algum problema com os dados do pedido.
+    ```json
+    {
+      "erro": "Tipo de frete desconhecido"
+    }
+    ```
+
+
 ## Benefícios
 
 - **Flexibilidade**: É fácil adicionar novos métodos de entrega sem modificar o código existente.
