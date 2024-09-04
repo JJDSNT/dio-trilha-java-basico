@@ -1,6 +1,6 @@
 # Projeto de Cálculo de Frete usando Strategy Pattern
 
-Este projeto demonstra a implementação do Pattern Strategy para resolver um problema de cálculo de frete em um sistema de e-commerce.
+Este projeto demonstra a implementação do [Pattern Strategy](https://refactoring.guru/pt-br/design-patterns/strategy) para resolver um problema de cálculo de frete em um sistema de e-commerce.
 
 ## Cenário
 
@@ -53,6 +53,11 @@ Calcula o valor do frete com base no tipo de entrega selecionado.
     }
     ```
 
+## Documentação da API
+
+A documentação da API pode ser visualizada através do Swagger UI. Acesse o Swagger UI em:
+
+- [Swagger UI](http://localhost:8080/swagger-ui/index.html)
 
 ## Benefícios
 
