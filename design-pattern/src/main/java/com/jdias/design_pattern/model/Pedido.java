@@ -5,6 +5,8 @@ public class Pedido {
     private double peso;
     private Dimensoes dimensoes;
     private String destino;
+    private TipoFrete tipoFrete;
+    private double volume;
 
     // Construtores
     public Pedido() {
@@ -12,7 +14,7 @@ public class Pedido {
 
     public Pedido(double peso, Dimensoes dimensoes, String destino) {
         this.peso = peso;
-        this.dimensoes = dimensoes;
+        this.volume = dimensoes.calcularVolume();
         this.destino = destino;
     }
 
@@ -33,6 +35,10 @@ public class Pedido {
         this.dimensoes = dimensoes;
     }
 
+    public double getVolume() {
+        return volume;
+    }
+
     public String getDestino() {
         return destino;
     }
@@ -40,51 +46,12 @@ public class Pedido {
     public void setDestino(String destino) {
         this.destino = destino;
     }
-}
 
-class Dimensoes {
-
-    private double altura;
-    private double largura;
-    private double profundidade;
-
-    // Construtores
-    public Dimensoes() {
+    public TipoFrete getTipoFrete() {
+        return tipoFrete;
     }
 
-    public Dimensoes(double altura, double largura, double profundidade) {
-        this.altura = altura;
-        this.largura = largura;
-        this.profundidade = profundidade;
-    }
-
-    // Getters e Setters
-    public double getAltura() {
-        return altura;
-    }
-
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
-
-    public double getLargura() {
-        return largura;
-    }
-
-    public void setLargura(double largura) {
-        this.largura = largura;
-    }
-
-    public double getProfundidade() {
-        return profundidade;
-    }
-
-    public void setProfundidade(double profundidade) {
-        this.profundidade = profundidade;
-    }
-
-    // Método para calcular o volume do pacote, se necessário
-    public double calcularVolume() {
-        return altura * largura * profundidade;
+    public void setTipoFrete(TipoFrete tipoFrete) {
+        this.tipoFrete = tipoFrete;
     }
 }
